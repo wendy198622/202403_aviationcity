@@ -62,12 +62,25 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="photo slick-photo">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" src="img/theme2_photo1.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s" src="img/theme2_photo2.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s" src="img/theme2_photo3.jpg" alt="">
+                    <div class="info mob wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                        <img src="img/theme2_infotitle.svg" alt="">
+                        <img src="img/theme2_infotxt.svg" alt="">
                     </div>
-                    <div class="info wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                    <div class="photo slick-photo">
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s"">
+                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <img src="img/theme2_photo1.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s"">
+                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <img src="img/theme2_photo2.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s"">
+                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <img src="img/theme2_photo3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info pc wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
                         <img src="img/theme2_infotitle.svg" alt="">
                         <img src="img/theme2_infotxt.svg" alt="">
                     </div>
@@ -82,9 +95,18 @@
                 </div>
                 <div class="bottom">
                     <div class="photo slick-photo">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" src="img/theme3_photo1.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s" src="img/theme3_photo2.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s" src="img/theme3_photo3.jpg" alt="">
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s"">
+                            <span>國際物流情境示意</span>
+                            <img src="img/theme3_photo1.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s"">
+                            <span>創新研發中心情境示意</span>
+                            <img src="img/theme3_photo2.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s"">
+                            <span>金融中心情境示意</span>
+                            <img src="img/theme3_photo3.jpg" alt="">
+                        </div>
                     </div>
                     <div class="info wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
                         <img src="img/theme3_infotitle.svg" alt="">
@@ -112,9 +134,18 @@
                 </div>
                 <div class="bottom">
                     <div class="photo slick-photo">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" src="img/theme4_photo1.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s" src="img/theme4_photo2.jpg" alt="">
-                        <img class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s" src="img/theme4_photo3.jpg" alt="">
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s"">
+                            <span>A15捷運站_情境示意</span>
+                            <img src="img/theme4_photo1.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s"">
+                            <span>大園體育中心_情境示意</span>
+                            <img src="img/theme4_photo2.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s"">
+                            <span>大園交流道_情境示意</span>
+                            <img src="img/theme4_photo3.jpg" alt="">
+                        </div>
                     </div>
                     <div class="pc">
                         <div class="group wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
@@ -172,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg mob">
+                <div class="bg mob" id="scrollDiv">
                     <img src="img/theme6_bg_mob.jpg" alt="">
                 </div>
             </div>
@@ -226,15 +257,17 @@
 		if( $(window).width() < 960 ){
             $('.slick-photo').slick({
             infinite: true,
-            dots: true,
-            arrows: false,
+            dots: false,
+            arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1
         });
 		}
 		else{
-			
+
 		}
+
+        $('#scrollDiv').scrollLeft(400);
 
     });
 
