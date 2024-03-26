@@ -182,7 +182,7 @@ section .theme .bottom {
 
 @media (max-width: 960px) {
   section .theme .bottom {
-    bottom: 40px;
+    bottom: 20px;
   }
 }
 
