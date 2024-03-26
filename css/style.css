@@ -529,6 +529,10 @@ section .theme5 .info img {
           filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
 }
 
+section .theme6 .fp-overflow {
+  width: 100%;
+}
+
 section .theme6 .title {
   width: calc(1084 / 1920 * 100%);
 }

@@ -363,6 +363,9 @@ section{
         }
     }
     .theme6{
+        .fp-overflow{
+            width: 100%;
+        }
         .title{
             width: calc(1084 / 1920 * 100%);
             @media (max-width:960px){
