@@ -543,7 +543,13 @@ section .theme6 .bg .horizontal-inner {
 }
 
 section .theme6 .bg .box {
-  width: 1000px;
+  width: auto;
+  height: 100vh;
+}
+
+section .theme6 .bg .box img {
+  width: auto;
+  height: 100vh;
 }
 
 section .theme7 .logo {

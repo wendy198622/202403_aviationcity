@@ -270,18 +270,27 @@
             sectionsColor: ['#2B009A', '#fff', '#fff', '#fff', '#fff', '#fff', '#2B009A'],
             navigation: false,
             scrollBar: true,
-            autoScrolling: true
+            autoScrolling: true,
+            responsiveWidth: 960
+            // afterResponsive: function(isResponsive){
+            //     autoScrolling: false,
+            // }
         });
         
         //box height
 		if( $(window).width() < 960 ){
             $('.slick-photo').slick({
-            infinite: true,
-            dots: false,
-            arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        });
+                infinite: true,
+                dots: false,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+
+            var myFullpage = new fullpage('#fullpage', {
+                autoScrolling: false
+            });
 		}
 		else{
 

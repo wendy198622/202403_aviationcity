@@ -401,7 +401,12 @@ section{
             }
 
             .box {
-                width: 1000px;
+                width: auto;
+                height: 100vh;
+                img{
+                    width: auto;
+                    height: 100vh;
+                }
             }
           }
           
