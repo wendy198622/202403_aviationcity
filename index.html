@@ -68,7 +68,7 @@
                         <img src="img/theme2_infotitle.svg" alt="">
                         <img src="img/theme2_infotxt_mob.svg" alt="">
                     </div>
-                    <div class="photo">
+                    <div class="photo slick-photo">
                         <div class="item">
                             <span>航空城計畫3D_圖片來源桃園市政府</span>
                             <img src="img/theme2_photo1.jpg" alt="">
@@ -95,7 +95,7 @@
                         <img class="mob" src="img/theme3_title_mob.svg" alt="">
                     </div>
                     <div class="mob">
-                        <div class="photo">
+                        <div class="photo slick-photo">
                             <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
                                 <span>國際物流情境示意</span>
                                 <img src="img/theme3_photo1.jpg" alt="">
@@ -117,7 +117,7 @@
                 </div>
                 <div class="bottom">
                     <div class="pc">
-                        <div class="photo">
+                        <div class="photo slick-photo">
                             <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
                                 <span>國際物流情境示意</span>
                                 <img src="img/theme3_photo1.jpg" alt="">
@@ -157,36 +157,18 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="pc">
-                        <div class="photo">
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                                <span>A15捷運站_情境示意</span>
-                                <img src="img/theme4_photo1.jpg" alt="">
-                            </div>
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
-                                <span>大園體育中心_情境示意</span>
-                                <img src="img/theme4_photo2.jpg" alt="">
-                            </div>
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                <span>大園交流道_情境示意</span>
-                                <img src="img/theme4_photo3.jpg" alt="">
-                            </div>
+                    <div class="photo slick-photo">
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
+                            <span>A15捷運站_情境示意</span>
+                            <img src="img/theme4_photo1.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="mob">
-                        <div class="photo slick-photo">
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                                <span>A15捷運站_情境示意</span>
-                                <img src="img/theme4_photo1.jpg" alt="">
-                            </div>
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
-                                <span>大園體育中心_情境示意</span>
-                                <img src="img/theme4_photo2.jpg" alt="">
-                            </div>
-                            <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                <span>大園交流道_情境示意</span>
-                                <img src="img/theme4_photo3.jpg" alt="">
-                            </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
+                            <span>大園體育中心_情境示意</span>
+                            <img src="img/theme4_photo2.jpg" alt="">
+                        </div>
+                        <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
+                            <span>大園交流道_情境示意</span>
+                            <img src="img/theme4_photo3.jpg" alt="">
                         </div>
                     </div>
                     <div class="pc">
@@ -324,8 +306,19 @@
             infinite: true,
             dots: false,
             arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                breakpoint: 1960,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+                }
+            ]
         });
 
     });
