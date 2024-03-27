@@ -260,7 +260,8 @@ section .theme2 .photo .item, section .theme3 .photo .item {
 }
 
 section .theme2 .photo .item img, section .theme3 .photo .item img {
-  width: 100%;
+  width: 192px;
+  height: 106px;
 }
 
 section .theme2 .photo .item span, section .theme3 .photo .item span {
@@ -336,7 +337,8 @@ section .theme4 .photo .item {
 }
 
 section .theme4 .photo .item img {
-  width: 100%;
+  width: 192px;
+  height: 106px;
 }
 
 section .theme4 .photo .item span {
