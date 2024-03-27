@@ -14,14 +14,15 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/examples.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- js -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
+    <!-- <script type="text/javascript" src="js/examples.js"></script> -->
     <script type="text/javascript" src="js/wow.min.js"></script>
     
 </head>
@@ -36,7 +37,7 @@
             </ul>
         </div> -->
         <section id="fullpage" class="fullpage">
-            <div class="section theme theme1">
+            <div class="section theme theme1" id="section0">
                 <div class="logo">
                     <img src="img/theme1_logo.svg" alt="">
                 </div>
@@ -52,7 +53,7 @@
                     <img class="mob" src="img/theme1_decotxt_mob.svg" alt="">
                 </div>
             </div>
-            <div class="section theme theme2">
+            <div class="section theme theme2" id="section1">
                 <div class="top">
                     <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <img class="pc" src="img/theme2_title.svg" alt="">
@@ -88,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section theme theme3">
+            <div class="section theme theme3" id="section2">
                 <div class="top">
                     <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <img class="pc" src="img/theme3_title.svg" alt="">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section theme theme4">
+            <div class="section theme theme4" id="section3">
                 <div class="top">
                     <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <img class="pc" src="img/theme4_title.svg" alt="">
@@ -184,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section theme theme5">
+            <div class="section theme theme5" id="section4">
                 <div class="top mob">
                     <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <img class="pc" src="img/theme5_title.svg" alt="">
@@ -228,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section theme theme6">
+            <div class="section theme theme6" id="section5">
                 <div class="top">
                     <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <img class="pc" src="img/theme6_title.svg" alt="">
@@ -251,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section theme theme7">
+            <div class="section theme theme7" id="section6">
                 <div class="logo">
                     <img src="img/theme7_logo.svg" alt="">
                 </div>
@@ -263,9 +264,11 @@
                     <img class="mob" src="img/theme7_title_mob.svg" alt="">
                 </div>
                 <div class="info wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                    <img src="img/theme7_infotxt.svg" alt="">
+                    <img class="pc" src="img/theme7_infotxt.svg" alt="">
+                    <img class="mob" src="img/theme7_infotxt_mob.svg" alt="">
                     <a href="https://jingdugarden54.com/" target="_blank">
-                        <img src="img/theme7_infobtn.svg" alt="">
+                        <img class="pc" src="img/theme7_infobtn.svg" alt="">
+                        <img class="mob" src="img/theme7_infobtn_mob.svg" alt="">
                     </a>
                 </div>
                 <div class="mark">
@@ -313,7 +316,7 @@
                     breakpoint: 960,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
                     }
                 }
             ]
