@@ -18,25 +18,25 @@ img{
 }
 
 
-body {
-    // background: #f5f6f6;
-    // font-family: 'Noto Serif TC', serif;
-    font-family: 'Noto Sans TC', serif;
-}
+// body {
+//     background: #f5f6f6;
+//     font-family: 'Noto Serif TC', serif;
+//     font-family: 'Noto Sans TC', serif;
+// }
 
-i.material-icons{
-    @font-face {
-        font-family: 'Material Icons';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-        src: local('Material Icons'),
-          local('MaterialIcons-Regular'),
-          url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-          url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-          url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-      }
-}
+// i.material-icons{
+//     @font-face {
+//         font-family: 'Material Icons';
+//         font-style: normal;
+//         font-weight: 400;
+//         src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+//         src: local('Material Icons'),
+//           local('MaterialIcons-Regular'),
+//           url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+//           url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+//           url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+//       }
+// }
 // .fixed_area{
 //     width: 100%;
 //     position: fixed;
