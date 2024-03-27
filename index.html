@@ -21,8 +21,8 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/fullpage.js"></script>
-    <!-- <script type="text/javascript" src="js/examples.js"></script> -->
-    <!-- <script type="text/javascript" src="js/wow.min.js"></script> -->
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     
 </head>
 
@@ -281,7 +281,7 @@
 
     $(document).ready(function () {
 
-        new WOW().init();
+        // new WOW().init();
 
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['01', '02', '03', '04', '05', '06', '07'],
@@ -294,14 +294,6 @@
             //     autoScrolling: false,
             // }
         });
-        
-        //box height
-		if( $(window).width() < 960 ){
-            $('.photo').addClass('slick-photo');
-		}
-		else{
-		}
-
 
         $('.slick-photo').slick({
             infinite: true,
@@ -310,6 +302,13 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
+
+        //box height
+		if( $(window).width() < 960 ){
+            $('.photo').addClass('slick-photo');
+		}
+		else{
+		}
 
     });
 
