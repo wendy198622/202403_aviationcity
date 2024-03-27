@@ -210,6 +210,9 @@ section{
                 img{
                     width: 192px;
                     height: 106px;
+                    @media (max-width:960px){
+                        width: 90vw;
+                    }
                 }
                 span{
                     position: absolute;
@@ -268,6 +271,9 @@ section{
                 img{
                     width: 192px;
                     height: 106px;
+                    @media (max-width:960px){
+                        width: 90vw;
+                    }
                 }
                 span{
                     position: absolute;

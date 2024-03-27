@@ -264,6 +264,12 @@ section .theme2 .photo .item img, section .theme3 .photo .item img {
   height: 106px;
 }
 
+@media (max-width: 960px) {
+  section .theme2 .photo .item img, section .theme3 .photo .item img {
+    width: 90vw;
+  }
+}
+
 section .theme2 .photo .item span, section .theme3 .photo .item span {
   position: absolute;
   right: 6px;
@@ -339,6 +345,12 @@ section .theme4 .photo .item {
 section .theme4 .photo .item img {
   width: 192px;
   height: 106px;
+}
+
+@media (max-width: 960px) {
+  section .theme4 .photo .item img {
+    width: 90vw;
+  }
 }
 
 section .theme4 .photo .item span {
