@@ -295,6 +295,13 @@
             // }
         });
 
+        //box height
+		if( $(window).width() < 960 ){
+            $('.photo').addClass('slick-photo');
+		}
+		else{
+		}
+
         $('.slick-photo').slick({
             infinite: true,
             dots: false,
@@ -302,13 +309,6 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
-
-        //box height
-		if( $(window).width() < 960 ){
-            $('.photo').addClass('slick-photo');
-		}
-		else{
-		}
 
     });
 
