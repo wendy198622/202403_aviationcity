@@ -602,6 +602,10 @@ section .theme7 .mark {
   }
 }
 
+.slick-slide {
+  width: 100% !important;
+}
+
 .slick-dots {
   bottom: -15px;
 }
