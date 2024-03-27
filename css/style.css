@@ -148,7 +148,7 @@ section .theme .top {
 section .theme .bottom {
   width: 100%;
   position: absolute;
-  bottom: 5%;
+  bottom: 12%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -156,7 +156,7 @@ section .theme .bottom {
 
 @media (max-width: 960px) {
   section .theme .bottom {
-    bottom: 20px;
+    bottom: 40px;
   }
 }
 
@@ -256,7 +256,6 @@ section .theme2 .photo, section .theme3 .photo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 14%;
   position: relative;
 }
 
@@ -330,7 +329,6 @@ section .theme4 .photo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 18%;
   position: relative;
 }
 
