@@ -210,14 +210,15 @@ section{
                 img{
                     width: 192px;
                     height: 106px;
+                    padding: 0 6px;
                     @media (max-width:960px){
-                        width: 90vw;
+                        width: 93vw;
                         height: auto;
                     }
                 }
                 span{
                     position: absolute;
-                    right: 6px;
+                    right: 10px;
                     bottom: 6px;
                     color: #fff;
                     font-size: 12px;

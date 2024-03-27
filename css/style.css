@@ -262,18 +262,19 @@ section .theme2 .photo .item, section .theme3 .photo .item {
 section .theme2 .photo .item img, section .theme3 .photo .item img {
   width: 192px;
   height: 106px;
+  padding: 0 6px;
 }
 
 @media (max-width: 960px) {
   section .theme2 .photo .item img, section .theme3 .photo .item img {
-    width: 90vw;
+    width: 93vw;
     height: auto;
   }
 }
 
 section .theme2 .photo .item span, section .theme3 .photo .item span {
   position: absolute;
-  right: 6px;
+  right: 10px;
   bottom: 6px;
   color: #fff;
   font-size: 12px;
