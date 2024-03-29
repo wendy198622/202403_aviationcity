@@ -101,6 +101,13 @@ section .theme {
   position: relative;
 }
 
+@media (max-width: 960px) {
+  section .theme {
+    height: 90vh;
+    padding: 100px 0;
+  }
+}
+
 section .theme * {
   margin: 0 auto;
 }
