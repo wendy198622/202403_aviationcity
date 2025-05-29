@@ -12,9 +12,6 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/examples.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -23,10 +20,11 @@
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/fullpage.js"></script>
-    <!-- <script type="text/javascript" src="js/examples.js"></script> -->
-    <!-- <script type="text/javascript" src="js/slick.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/base64.js"></script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -43,19 +41,41 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMK8M5X"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
+    
+<div id="app">
     <section id="fullpage" class="fullpage">
+        <div class="section theme theme0" id="section0">
+            <div class="slide active" id="slide1">   
+                <div class="photo wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <img class="pc" src="img/theme0-1.jpg" alt="">
+                    <img class="mob" src="img/theme0-1_mob.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="photo wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <img class="pc" src="img/theme0-2.jpg" alt="">
+                    <img class="mob" src="img/theme0-2_mob.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <div class="section theme theme1" id="section1">
-            <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                <img class="pc" src="img/theme1_title.svg" alt="">
-                <img class="mob" src="img/theme1_title_mob.svg" alt="">
+            <div class="top">
+                <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <img class="pc" src="img/theme1_title.svg" alt="">
+                    <img class="mob" src="img/theme1_title_mob.svg" alt="">
+                </div>
             </div>
-            <div class="subtitle wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                <img class="pc" src="img/theme1_subtitle2.svg" alt="">
-                <img class="mob" src="img/theme1_subtitle2_mob.svg" alt="">
+            <div class="bottom">
+                <div class="logos wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
+                    <img class="mob" src="img/theme1_icon_mob.svg" alt="">
+                </div>
+                <div class="subtitle">
+                    <img class="pc" src="img/theme1_subtitle.svg" alt="">
+                    <img class="mob" src="img/theme1_subtitle_mob.svg" alt="">
+                </div>
             </div>
-            <div class="logos wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                <img src="img/theme1_logos.svg" alt="">
+            <div class="slogan">
+                <img src="img/theme1_slogan.svg" alt="">
             </div>
             <div class="mkt">
                 <img src="img/theme1_mkt.svg" alt="">
@@ -85,16 +105,19 @@
                 <div class="pc">
                     <div class="photo">
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                             <img src="img/theme3_photo1.jpg" alt="">
+                            <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
-                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                             <img src="img/theme3_photo2.jpg" alt="">
+                            <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                            <span>航空城計畫3D_圖片來源桃園市政府</span>
+                            <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                             <img src="img/theme3_photo3.jpg" alt="">
+                            <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -103,20 +126,23 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                                    <span>航空城計畫3D_圖片來源桃園市政府</span>
+                                    <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                                     <img src="img/theme3_photo1.jpg" alt="">
+                                    <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
-                                    <span>航空城計畫3D_圖片來源桃園市政府</span>
+                                    <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                                     <img src="img/theme3_photo2.jpg" alt="">
+                                    <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                    <span>航空城計畫3D_圖片來源桃園市政府</span>
+                                    <!-- <span>航空城計畫3D_圖片來源桃園市政府</span> -->
                                     <img src="img/theme3_photo3.jpg" alt="">
+                                    <img class="txt" src="img/theme3_photo_txt.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -141,38 +167,44 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                                    <span>國際物流情境示意</span>
+                                    <!-- <span>國際觀光情境示意</span> -->
                                     <img src="img/theme4_photo1.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo1_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.3s">
-                                    <span>創新研發中心情境示意</span>
+                                    <!-- <span>工商展覽情境示意</span> -->
                                     <img src="img/theme4_photo2.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo2_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                    <span>金融中心情境示意</span>
+                                    <!-- <span>交通情境示意</span> -->
                                     <img src="img/theme4_photo3.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo3_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                    <span>金融中心情境示意</span>
+                                    <!-- <span>物流情境示意</span> -->
                                     <img src="img/theme4_photo4.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo4_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                    <span>金融中心情境示意</span>
+                                    <!-- <span>研發中心情境示意</span> -->
                                     <img src="img/theme4_photo5.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo5_txt.svg" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.6s">
-                                    <span>金融中心情境示意</span>
+                                    <!-- <span>生活情境示意</span> -->
                                     <img src="img/theme4_photo6.jpg" alt="">
+                                    <img class="txt" src="img/theme4_photo6_txt.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -194,33 +226,33 @@
                     </div>
                     <div class="photo">
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.6s">
-                            <span>情境示意</span>
+                            <!-- <span>國際觀光情境示意</span> -->
                             <img src="img/theme4_photo1.jpg" alt="">
                             <img class="txt" src="img/theme4_photo1_txt.svg" alt="">
 
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.9s">
-                            <span>情境示意</span>
+                            <!-- <span>工商展覽情境示意</span> -->
                             <img src="img/theme4_photo2.jpg" alt="">
                             <img class="txt" src="img/theme4_photo2_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.2s">
-                            <span>情境示意</span>
+                            <!-- <span>交通情境示意</span> -->
                             <img src="img/theme4_photo3.jpg" alt="">
                             <img class="txt" src="img/theme4_photo3_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                            <span>情境示意</span>
+                            <!-- <span>物流中心情境示意</span> -->
                             <img src="img/theme4_photo4.jpg" alt="">
                             <img class="txt" src="img/theme4_photo4_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.8s">
-                            <span>情境示意</span>
+                            <!-- <span>研發中心情境示意</span> -->
                             <img src="img/theme4_photo5.jpg" alt="">
                             <img class="txt" src="img/theme4_photo5_txt.svg" alt="">
                         </div>
                         <div class="item wow fadeInDown" data-wow-duration="2s" data-wow-delay="2.1s">
-                            <span>情境示意</span>
+                            <!-- <span>生活情境示意</span> -->
                             <img src="img/theme4_photo6.jpg" alt="">
                             <img class="txt" src="img/theme4_photo6_txt.svg" alt="">
                         </div>
@@ -251,11 +283,11 @@
                 <div class="mob">
                     <div class="group wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div class="subtitle">
-                            <img src="img/theme5_subtitle.svg" alt="">
+                            <img src="img/theme5_subtitle_mob.svg" alt="">
                         </div>
                         <div class="info">
-                            <img src="img/theme5_infotitle.svg" alt="">
-                            <img src="img/theme5_infotxt.svg" alt="">
+                            <img src="img/theme5_infotitle_mob.svg" alt="">
+                            <img src="img/theme5_infotxt_mob.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -266,12 +298,13 @@
                 <img src="img/theme6_mkt.svg" alt="">
             </div>
             <div class="top">
-                <div class="icon wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <img src="img/theme6_icon.png" alt="">
-                </div>
-                <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.8s">
+                <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
                     <img class="pc" src="img/theme6_title.svg" alt="">
                     <img class="mob" src="img/theme6_title_mob.svg" alt="">
+                </div>
+                <div class="subtitle wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.8s">
+                    <img class="pc" src="img/theme6_subtitle.svg" alt="">
+                    <img class="mob" src="img/theme6_subtitle_mob.svg" alt="">
                 </div>
                 <div class="mob">
                     <div class="feature">
@@ -360,14 +393,14 @@
                         <div class="swiper-button-next"></div>
                     </div>
                     <div class="content">
-                        <div class="icon wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <img src="img/theme7_icon.svg" alt="">
+                        <div class="subtitle wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <img src="img/theme7_subtitle.svg" alt="">
                         </div>
                         <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                            <img src="img/theme7_title2.svg" alt="">
+                            <img src="img/theme7_title.svg" alt="">
                         </div>
                         <div class="infotxt wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                            <img src="img/theme7_infotxt2.svg" alt="">
+                            <img src="img/theme7_infotxt.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -400,10 +433,10 @@
                     </div>
                     <div class="content">
                         <div class="title wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
-                            <img src="img/theme7_title2.svg" alt="">
+                            <img src="img/theme7_title.svg" alt="">
                         </div>
                         <div class="infotxt wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                            <img src="img/theme7_infotxt2_mob.svg" alt="">
+                            <img src="img/theme7_infotxt.svg" alt="">
                         </div>
                     </div>
                     <div class="swiper-container photo">
@@ -523,9 +556,6 @@
             <div class="subtitle wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/theme10_subtitle.svg" alt="">
             </div>
-            <div class="infotxt wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
-                <img class="pc" src="img/theme10_infotxt.svg" alt="">
-            </div>
             <div class="infobtn wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
                 <a href="https://jingdugarden54.com/" target="_blank">
                     <img class="pc" src="img/theme10_infobtn.svg" alt="">
@@ -534,12 +564,45 @@
             </div>
             <div class="mob">
                 <div class="logo wow fadeInDown" data-wow-duration="2s" data-wow-delay="2.5s">
-                    <img src="img/theme10_logo_mob.svg" alt="">
+                    <img src="img/theme1_icon_mob.svg" alt="">
                 </div>
+            </div>
+        </div>
+        <div class="section theme theme11" id="section11">
+            <h4>預約諮詢</h4>
+            <div class="form wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                <div class="formbox">
+                    <div class="item wow fadeInUp" data-wow-delay=".3s">
+                        <input type="text" v-model="name" name="name" placeholder="姓名" required />
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay=".5s">
+                        <input type="text" v-model="phone" name="phone" placeholder="電話" required />
+                    </div>
+                    <div class="item wow fadeInUp" data-wow-delay=".3s">
+                            <select v-model="type" name="type" placeholder="time">
+                                <option disabled selected value="">你要的房型</option>
+                                <option>二房</option>
+                                <option>三房</option>
+                            </select>
+                    </div>   
+                    <button v-on:click="sendEmail()">送出表單</button>                   
+                </div>             
             </div>
         </div>
 
     </section>
+    
+    <section class="popup" v-bind:class="{ is_acted: popupIndex != 0 }">
+
+        <div class="formGroup popup_message">
+
+            {{msg}}
+
+        </div>
+
+    </section>
+
+</div>
 
 </body>
 
@@ -550,8 +613,8 @@
         new WOW().init();
 
         var myFullpage = new fullpage('#fullpage', {
-            anchors: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
-            sectionsColor: ['#2B009A', '#31009c', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#2B009A'],
+            anchors: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+            sectionsColor: ['#39369d','#2B009A', '#31009c', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#2B009A'],
             navigation: false,
             scrollBar: true,
             autoScrolling: true,
@@ -561,24 +624,10 @@
             // }
         });
 
-        //box height
-		// if( $(window).width() < 960 ){
-        //     $('.photo').addClass('slick-photo');
-		// }
-		// else{
-		// }
-
-        // $('.slick-photo').slick({
-        //     infinite: true,
-        //     dots: false,
-        //     arrows: true,
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1
-        // });
-
     });
 
     var mySwiper = new Swiper ('.swiper-container', {
+        autoplay:true,
         // If we need pagination
         pagination: {
         el: '.swiper-pagination',
@@ -593,6 +642,93 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         },
+    })
+
+
+
+    new Vue({
+
+        el: '#app',
+
+        data: {
+            popupIndex: 0,
+            name: "",
+            phone: "",
+            type: "",
+            infoIndex: 0 // 0=關閉
+        },
+
+        created() { },
+
+        methods: {
+
+            showPopup: function (tag) {
+
+                $('.popup').slick('slickGoTo', 0)
+                this.popupIndex = tag
+            },
+
+            sendEmail: function () {
+
+                var self = this;
+
+                // var tomail = "wendy198622@gmail.com" //信箱
+                var tomail = "yishuan0609@gmail.com,dondon710106@gmail.com,aa0976939826@gmail.com"
+                var to_name = "新理想建設" //信件名稱
+                var subject = "預約表單：璟都建設-54地號" //信件主旨
+                var content = "姓名:" + self.name + "<br>" +
+                    "電話:" + self.phone + "<br>" +
+                    "需求房型:" + (self.type + "\n") + "<br>" 
+                //console.log(content)
+
+                // if (!self.check) {
+                //     self.popupIndex = 10
+                //     self.msg = "請勾選同意本公司個資保護條款。"
+                //     setTimeout(function () {
+                //         self.popupIndex = 0
+                //     }, 1000)
+                //     return
+                // }
+
+                self.msg = "表單傳送中...。"
+                self.popupIndex = 10
+
+
+                fetch('https://yabeesshop.com/forwardMail/mailV2.php', {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams({
+                        subject: subject,
+                        body: content,
+                        to: tomail,
+                        to_name: to_name
+                    }).toString()
+                })
+                .then(response => response.json())
+                .then(function (myJson) {
+                    console.log(myJson)
+                    if (myJson.code == 200) {
+                        self.msg = "系統已送出您的表單。"
+                        setTimeout(function () {
+                            self.popupIndex = 0
+                        }, 3000);
+                    } else {
+                        self.msg = "表單送出失敗，請重新送出。"
+                    }
+                });
+
+            },
+
+            enterInfoDailog: function (inedx) {
+
+
+
+            }
+
+        }
+
     })
 
 
